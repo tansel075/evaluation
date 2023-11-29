@@ -8,7 +8,7 @@ if ($_SESSION["mail"] != 'administrateur@gmail.com') {
  }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
