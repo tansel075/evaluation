@@ -79,7 +79,7 @@ if(isset($_SESSION["userrole"]) && ($_SESSION["userrole"] == 'admin')){
                     $sql = "INSERT INTO commandes(idproduit,idclient, quantite, prixHt, tva, prixTtc) 
                     VALUES (:idproduit,:idclient, :quantite,:prixHt,:tva,:prixTtc)";
                     $insertion = $connexion->prepare($sql);
-                    $insertion->bindParam(":idproduit", $idproduit);
+                    $insertion->bindParam(":idproduits", $idproduit);
                     $insertion->bindParam(":idclient", $idclient);
                     $insertion->bindParam(":quantite", $quantite);
                     $insertion->bindParam(":prixHt", $prixHt);
